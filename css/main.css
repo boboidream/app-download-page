@@ -1,0 +1,73 @@
+.logo {
+  background: url(../images/app_bg.png) top center no-repeat #fff;
+  width: 160px;
+  height: 160px;
+  background-size: 100% auto;
+  border: none;
+  /* margin: -150px auto 30px; */
+  margin: 2em auto;
+  text-align: center;
+}
+
+.logo .pic {
+  border: none;
+  width: 100px;
+  height: 100px;
+  margin-top: 34px;
+}
+
+.version {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.version img {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.version h2 {
+  margin: 0 0.5em;
+}
+
+.version .type {
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: .25em;
+  padding: 3px 7px;
+  color: #fff;
+  background-color: #e84d67;
+}
+
+.detail {
+  padding: 0 5px;
+  text-align: center;
+  line-height: 1.6;
+  color: #969b9d;
+  font-size: 14px;
+  
+}
+
+.download {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.download .button {
+  font-size: 18px;
+  padding: 8px 60px;
+  border-radius: 30px;
+  border: 1px solid #1ABC9C;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  background-color: #28caad;
+}
+
+
+
+
+
+}
