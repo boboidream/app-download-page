@@ -3,7 +3,7 @@ var app = new Vue({
   data: {
     message: 'Hello Vue!',
     client: judgeClient(),
-    releaseTime: 1594000910021,
+    releaseTime: 1594087317887,
   },
   computed: {
     timeAge() {
