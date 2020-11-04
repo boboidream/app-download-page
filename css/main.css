@@ -1,3 +1,10 @@
+.notice {
+  display: flex;
+  margin: -8px;
+  padding: 10px;
+  color: #ccc;
+  background-color: #343434;
+}
 .logo {
   background: url(../images/app_bg.png) top center no-repeat #fff;
   width: 160px;

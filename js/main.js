@@ -21,6 +21,8 @@ function judgeClient() {
     client = 'iOS';
   } else if (/(Android)/i.test(navigator.userAgent)) {  //判断Android
     client = 'Android';
+  } else if ( /MicroMessenger/i.test(navigator.userAgent)) { 
+    client = 'WX';
   } else {
     client = 'PC';
   }
