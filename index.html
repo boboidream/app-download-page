@@ -9,23 +9,23 @@
 <body>
   <div class="page" id="app">
     <div class="logo">
-      <img src="./images/bank.png" class="pic" alt="青银聚合APP">
+      <img src="./images/flutter.png" class="pic" alt="微云验方APP">
     </div>
   
     <div class="version">
-      <img v-if="client === 'iOS'" src="./images/icon_apple.png" class="icon" alt="青银聚合APP">
-      <img v-else-if="client === 'Android'" src="./images/icon_android.png" class="icon" alt="青银聚合APP">
-      <h2>青银聚合</h2>
+      <img v-if="client === 'iOS'" src="./images/icon_apple.png" class="icon" alt="微云验方APP">
+      <img v-else-if="client === 'Android'" src="./images/icon_android.png" class="icon" alt="微云验方APP">
+      <h2>微云验方</h2>
       <div class="type">内测版</div>
     </div>
     
     <div class="detail">
-      <p>版本：Beta_0.4.5</p>
+      <p>版本：1.0.6</p>
       <p>更新时间：{{ timeAge }}</p>
     </div>
   
     <div class="download">
-      <a v-if="client === 'Android'" class="button" download="青银聚合" href="http://qiniu.xdm3d.com/Beta_0.4.5_2.apk">点击下载</a>
+      <a v-if="client === 'Android'" class="button" download="青银聚合" href="http://qiniu.xdm3d.com/106.apk">点击下载</a>
       <a v-else-if="client === 'iOS'" class="button" download="青银聚合" href="itms-services://?action=download-manifest&url=https://qyjh.now.sh/archive.plist">点击安装</a>
       <span v-else>请在手机浏览器中下载 APP</span>
     </div>
