@@ -1,14 +1,24 @@
+var VersionInfo = {
+  version: '1.0.7',
+  androidUrl: 'http://qiniu.xdm3d.com/1071.apk',
+  releaseTime: 1604564378973,
+}
+
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!',
+    version: VersionInfo.version,
+    androidUrl: VersionInfo.androidUrl,
+    releaseTime: VersionInfo.releaseTime,
     client: judgeClient(),
-    releaseTime: 1604564378973,
   },
   computed: {
     timeAge() {
       return timeago(this.releaseTime)
     }
+  },
+  beforeCreate () {
+    document.title = "微云验方V" + VersionInfo.version + "下载-青海源创"
   }
 })
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>青海源创-微云验方下载</title>
+  <title>微云验方{{ version }}下载-青海源创</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -25,13 +25,13 @@
     </div>
     
     <div class="detail">
-      <p>版本：1.0.7</p>
+      <p>版本：{{ version }}</p>
       <p>更新时间：{{ timeAge }}</p>
     </div>
   
     <div class="download">
       <a v-if="client === 'WX'" class="button" download="微云验方" href="#">点右上角到浏览器下载</a>
-      <a v-else-if="client === 'Android'" class="button" download="微云验方" href="http://qiniu.xdm3d.com/1071.apk">点击下载</a>
+      <a v-else-if="client === 'Android'" class="button" download="微云验方" :href="androidUrl">点击下载</a>
       <a v-else-if="client === 'iOS'" class="button" download="微云验方" href="itms-services://?action=download-manifest&url=https://qyjh.now.sh/archive.plist">点击安装</a>
       <span v-else>请在手机浏览器中下载 APP</span>
     </div>
