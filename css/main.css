@@ -73,8 +73,17 @@
   background-color: #28caad;
 }
 
-
-
-
-
+.preview {
+  margin-top: 60px;
 }
+
+.preview h3 {
+  color: #333;
+}
+
+.preview img {
+  width: 100%;
+}
+
+
+

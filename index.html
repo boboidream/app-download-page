@@ -38,6 +38,13 @@
       <a v-else-if="client === 'iOS'" class="button" download="微云验方" href="https://testflight.apple.com/join/4EtcLBRb">进入安装</a>
       <span v-else>请在手机浏览器中下载 APP</span>
     </div>
+    
+    <!-- 截图展示 -->
+    <div class="preview" v-if="client === 'iOS'">
+      <hr>
+      <h3>iOS 内测版安装步骤(截图)</h3>
+      <img v-for="i in [5,6,7,8,9]" :src="'./images/screen'+i+'.jpeg'" alt="截图">
+    </div>
   </div>
 <script src="./js/vue.min.js"></script>
 <script src="./js/main.js"></script>
